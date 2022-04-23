@@ -18,7 +18,7 @@ def track_event(event_type, event_data):
     except Exception as e:
         print(e)
     
-def get_iteration(seed):
+def get_iteration():
     iterators = boto3.resource('dynamodb').Table('lytn.it_iterators')
     response = iterators.update_item(
         Key={ 'seed': seed },
@@ -55,7 +55,7 @@ def lambda_handler(event, context):
     clean_dest = f"http://{dest}" if (not meets_url_requirements(dest)) else dest
     if meets_url_requirements(clean_dest):
         while True:
-            id = vainID.generate_id(seed)
+            id = vainID.generate_id(get_iteration(), seed)
             if not has_conflict(id):
                 print(f"There was no conflict with {id}")
                 break
