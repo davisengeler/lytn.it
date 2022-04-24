@@ -49,7 +49,6 @@ def add_item(new_item):
     response = forwards.put_item(Item=new_item)
     
 def lambda_handler(event, context):
-    track_event("test2", event)
     params = event['queryStringParameters']
     dest = params['dest']
     clean_dest = f"http://{dest}" if (not meets_url_requirements(dest)) else dest
