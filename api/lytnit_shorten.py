@@ -68,7 +68,7 @@ def lambda_handler(event, context):
             ip = ""
         new_item = { 
             'id': id,
-            'destination': dest,
+            'destination': clean_dest,
             'ip': ip,
             'event_time': datetime.datetime.now().isoformat()
         }
