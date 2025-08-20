@@ -485,7 +485,7 @@ export default function AdminDashboard() {
   const getStatusColor = (status: string | null | undefined): string => {
     switch (status) {
       case 'pending': return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400';
-      case 'reviewed': return 'bg-[#467291]/10 text-[#467291] dark:bg-[#467291]/30 dark:text-[#5a8eb2]';
+      case 'reviewed': return 'bg-[#467291]/10 text-[#467291] dark:bg-[#467291]/30 dark:text-[#467291]';
       case 'resolved': return 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400';
       case 'dismissed': return 'bg-muted text-muted-foreground';
       default: return 'bg-muted text-muted-foreground';

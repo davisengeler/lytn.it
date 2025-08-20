@@ -161,11 +161,11 @@ export default function Navigation() {
         .dark [data-amplify-authenticator] {
           --amplify-components-fieldcontrol-border-color: oklch(0.6 0.02 220);
           --amplify-components-textfield-border-color: #89949f;
-          --amplify-components-button-primary-background-color: oklch(0.7 0.15 220);
-          --amplify-components-fieldcontrol-focus-border-color: oklch(0.7 0.15 220);
+          --amplify-components-button-primary-background-color: #467291;
+          --amplify-components-fieldcontrol-focus-border-color: #467291;
           --amplify-components-tabs-item-color: white;
-          --amplify-components-tabs-item-active-color: oklch(0.7 0.15 220);
-          --amplify-components-tabs-item-active-border-color: oklch(0.7 0.15 220);
+          --amplify-components-tabs-item-active-color: #467291;
+          --amplify-components-tabs-item-active-border-color: #467291;
         }
         
         /* Hide default heading */
@@ -238,7 +238,7 @@ export default function Navigation() {
         .dark [data-amplify-authenticator] .amplify-button[type="submit"],
         .dark [data-amplify-authenticator] button[data-amplify-button-variation="primary"],
         .dark [data-amplify-authenticator] .amplify-button[data-amplify-button-variation="primary"] {
-          background-color: oklch(0.7 0.15 220) !important;
+          background-color: #467291 !important;
           color: white !important;
         }
         
@@ -266,7 +266,7 @@ export default function Navigation() {
         /* Active tab - dark mode uses theme primary */
         .dark [data-amplify-authenticator] .amplify-tabs-item[aria-selected="true"],
         .dark [data-amplify-authenticator] [role="tab"][aria-selected="true"] {
-          color: oklch(0.7 0.15 220) !important;
+          color: #467291 !important;
         }
         
         /* Password show/hide button - light mode pure white background, black icon */
