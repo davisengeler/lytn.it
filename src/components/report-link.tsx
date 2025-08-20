@@ -108,7 +108,12 @@ export default function ReportLink({ lytnUrl, shortId, onClose, onSuccess }: Rep
 
   return (
     <div 
-      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+      className="fixed inset-0 flex items-center justify-center z-50 p-4"
+      style={{
+        backgroundColor: 'rgba(63, 63, 63, 0.4)',
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)'
+      }}
       onClick={() => onClose?.()}
     >
       <div 
