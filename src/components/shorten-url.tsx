@@ -113,7 +113,7 @@ export default function ShortenUrl() {
     const displayUrl = shortenedUrl ? shortenedUrl.replace(/^https?:\/\//, '') : '';
     
     // Auto-sizing for the shortened URL
-    const { fontSize, textRef, isCalculated } = useAutoSizeText(displayUrl, 60, 16);
+    const { fontSize, textRef, isCalculated } = useAutoSizeText(displayUrl, 40, 16);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
